@@ -1,0 +1,58 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+body {
+    font-family: Sarabun, sans-serif;
+    background-color: #1c1025;
+}
+::selection { background-color: #E13300; color: white; }
+
+
+
+
+
+
+/* 
+ตาราง Table Responsive
+*/
+table {
+    text-align: center;
+}
+@media (max-width: 575px) {
+    table thead {
+        display: none;
+    }
+    table tr {
+        display: flex;
+        flex-direction: column;
+        border: 3px solid rgb(29, 28, 28);
+        padding: 1px;
+    }
+    table td[data-label] {
+        display: flex;
+        font-weight: bold;
+    }
+    table td[data-label]::before {
+        content: attr(data-label);
+        color: lightgrey;
+        font-weight: 100;
+        width: 50%;
+    }
+}
+
+
+
+
+
+/* 
+ สีพื้นหลังกับฟ้อนของ SweetAlert2
+ */
+
+.swal2-popup {
+    color: white;
+    background: #212529;
+}
+.swal2-title {
+    color: #ffffff;
+}
+button, input, optgroup, select, textarea {
+    color: #ffffff;
+}
